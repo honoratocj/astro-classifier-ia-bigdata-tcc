@@ -1,62 +1,91 @@
-astro-classifier-ia-bigdata-tcc
-Projeto de TCC com foco na classificação de objetos astronômicos utilizando machine learning. Inclui dois modelos: um para identificar galáxias, estrelas e quasares, e outro para classificar espectros estelares segundo o índice de Harvard. Utilização do Databricks para experimentação.
+# 🌌 Astro Classifier IA & Big Data TCC
 
-Stellar Classification with Machine Learning
-Este repositório reúne os códigos e documentos do Trabalho de Conclusão de Curso (TCC) em Inteligência Artificial e Big Data, com foco em astronomia.
+Projeto de TCC com foco na **classificação de objetos astronômicos** utilizando técnicas de *machine learning*. Inclui dois estudos principais:  
+- Um classificador de objetos do tipo **galáxia, estrela e quasar (QSO)**  
+- Um classificador de **espectros estelares** com base no **índice espectral de Harvard**
 
-🎯 Objetivo
-Desenvolver modelos de aprendizado de máquina para análise e classificação de dados astronômicos, utilizando datasets espectrais e fotométricos do Sloan Digital Sky Survey (SDSS).
+> 💻 As experimentações foram realizadas utilizando o ambiente **Databricks** com suporte ao **Apache Spark**.
 
-🛰️ Componentes do Projeto
-Este TCC contempla dois trabalhos principais:
+---
 
-1. Classificação de Objetos Astronômicos
-Objetivo: Identificar automaticamente objetos como:
+## 🎯 Objetivo
 
-STAR
-GALAXY
-QSO (quasar)
-Dados utilizados:
+Desenvolver modelos de **aprendizado de máquina** para análise e classificação de dados astronômicos, com base em **datasets espectrais e fotométricos** extraídos do **Sloan Digital Sky Survey (SDSS - DR18)**.
 
-Tabelas do SDSS: PhotoObjAll, SpecObjAll, galSpecInfo, zoo2MainSpecz, entre outras.
-Features espectrais, fotométricas e de classificação morfológica.
-Modelos utilizadas:
+---
 
-Multilayer Perceptron (MLP)
-Random Forest
-SVM
-Histogram-based Gradient Boosting
-Decision Tree
-Logistic Regression
-Naive Bayes
-2. Classificação de Estrelas pelo Índice de Harvard
-Objetivo: Classificar espectros estelares em subclasses de temperatura com base no Índice de Harvard:
+## 🛰️ Componentes do Projeto
 
-Tipos espectrais: O, B, A, F, G, K, M
-Dados utilizados:
+### 1. Classificação de Objetos Astronômicos
 
-Tabelas do SDSS: galSpecIndx, galSpecExtra, entre outras.
-RedShift, Features espectrais, fotométricas e de classificação morfológica.
-Modelos aplicados:
+- **Objetivo**: Identificar automaticamente objetos como:
+  - `STAR`
+  - `GALAXY`
+  - `QSO (quasar)`
 
-Multilayer Perceptron (MLP)
-Random Forest
-SVM
-Histogram-based Gradient Boosting
-Decision Tree
-Logistic Regression
-Naive Bayes
-⚙️ Tecnologias e Ferramentas
-Python (Scikit-learn, Pandas, Matplotlib)
-Apache Spark com PySpark
-Databricks (ambiente de experimentação)
-SMOTE (balanceamento de classes)
-SDSS DR18
-GridSearchCV, RandomizedSearchCV
-📊 Resultados
-Alta acurácia na classificação de galaxy, star e qso após balanceamento.
-Subclassificação de estrelas consistente com os padrões espectrais esperados segundo o diagrama de Hertzsprung-Russell.
-🧠 Contribuições
-Este projeto foi desenvolvido como parte do TCC de conclusão do curso de pós-graduação em Inteligência Artificial e Big Data (ICMC - USP São Carlos).
+- **Dados utilizados**:
+  - Tabelas do SDSS: `PhotoObjAll`, `SpecObjAll`, `galSpecInfo`, `zoo2MainSpecz`, entre outras.
+  - Features espectrais, fotométricas e de classificação morfológica.
 
-Agradecimentos especiais ao ICMC pelo apoio institucional e bolsa de estudos.
+- **Modelos testados**:
+  - `Random Forest` 🌟 (melhor desempenho)
+  - `Multilayer Perceptron (MLP)`
+  - `Support Vector Machine (SVM)`
+  - `Histogram-based Gradient Boosting`
+  - `Decision Tree`
+  - `Logistic Regression`
+  - `Naive Bayes`
+
+---
+
+### 2. Classificação de Estrelas pelo Índice de Harvard
+
+- **Objetivo**: Classificar espectros estelares em **subclasses de temperatura** segundo o **índice de Harvard**, com base no tipo espectral:
+
+  `O`, `B`, `A`, `F`, `G`, `K`, `M`
+
+- **Dados utilizados**:
+  - Tabelas do SDSS: `galSpecIndx`, `galSpecExtra`, entre outras.
+  - Features espectrais, fotométricas e redshift (`Z`).
+
+- **Modelos aplicados**:
+  - `Random Forest` 🌟 (melhor desempenho)
+  - `Multilayer Perceptron (MLP)`
+  - `Support Vector Machine (SVM)`
+  - `Histogram-based Gradient Boosting`
+  - `Decision Tree`
+  - `Logistic Regression`
+  - `Naive Bayes`
+
+---
+
+## ⚙️ Tecnologias e Ferramentas
+
+- `Python` (com Scikit-learn, Pandas, Matplotlib, Seaborn)
+- `Apache Spark` com `PySpark`
+- `Databricks` (ambiente de experimentação)
+- `SMOTE` para balanceamento de classes
+- `SDSS DR18` para extração de dados espectrais
+- `GridSearchCV` e `RandomizedSearchCV` para tunning de hiperparâmetros
+
+---
+
+## 📊 Resultados
+
+- Alta acurácia na **classificação de objetos astronômicos** (`galaxy`, `star`, `qso`) após aplicação de técnicas de balanceamento.
+- **Subclassificação de espectros estelares** consistente com os padrões espectrais esperados, conforme o **diagrama de Hertzsprung-Russell**.
+
+---
+
+## 🧠 Contribuições
+
+Este projeto foi desenvolvido como parte do **Trabalho de Conclusão de Curso (TCC)** do programa de pós-graduação em **Inteligência Artificial e Big Data** do **ICMC - USP São Carlos**.
+
+---
+
+## 🙏 Agradecimentos
+
+Agradecimentos especiais ao **ICMC/USP** pelo apoio institucional e à concessão da **bolsa de estudos**, fundamentais para a realização desta pesquisa.
+
+---
+
