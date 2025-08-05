@@ -42,7 +42,7 @@ Desenvolver modelos de **aprendizado de máquina** para análise e classificaç�
 
 - **Objetivo**: Classificar espectros estelares em **subclasses de temperatura** segundo o **índice de Harvard**, com base no tipo espectral:
 
-  `O`, `B`, `A`, `F`, `G`, `K`, `M`
+  `O`, `B`, `A`, `F`, `G`, `K`, `M`, `L`, `T`
 
 - **Dados utilizados**:
   - Tabelas do SDSS: `galSpecIndx`, `galSpecExtra`, entre outras.
