@@ -1,4 +1,4 @@
-# 🌌 Astro Classifier IA & Big Data TCC
+# 🌌 Astromical Classifiers - IA & Big Data TCC
 
 Projeto de TCC com foco na **classificação de objetos astronômicos** utilizando técnicas de *machine learning*. Inclui dois estudos principais:  
 - Um classificador de objetos do tipo **galáxia, estrela e quasar (QSO)**  
